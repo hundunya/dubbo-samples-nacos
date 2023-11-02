@@ -1,0 +1,18 @@
+# redis配置
+spring:
+  redis:
+    host: xxxx
+    port: 6379
+    password: xxxx
+# dubbo配置
+dubbo:
+  application:
+    name: provider
+    qos-enable: true
+    qos-port: 33333
+    qos-accept-foreign-ip: false
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://xxxx:8848
